@@ -1,3 +1,19 @@
+welcomeMessage();
+
+function welcomeMessage() {
+    const userInput = prompt('Please enter your name:');
+    const welcomDOM = document.getElementById('welcome-speech');
+    if (userInput === null || userInput.trim() === '') {
+        welcomDOM.innerHTML = 'Welcome, Guest!';
+    } else {
+        welcomDOM.innerHTML = 'Welcome, ' + userInput + '!';
+    }
+}
+
+function validateForm() { }
+
+
+
 function updateTime() {
     document.getElementById("time").innerText = new Date().toString();
 }
@@ -19,3 +35,5 @@ document.getElementById("messageForm").addEventListener("submit", function(e) {
     document.getElementById("outPesan").innerText =
         document.getElementById("pesan").value;
 });
+
+
