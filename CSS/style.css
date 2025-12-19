@@ -1,0 +1,41 @@
+body {
+    padding-top: 56px;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("../Assets/img/kny.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.output-box {
+    border: 1px solid #333;
+    padding: 20px;
+    background: #fff;
+    min-height: 250px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
